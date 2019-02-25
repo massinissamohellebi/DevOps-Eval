@@ -5,6 +5,6 @@ job('V1-job') {
         git(gitUrl,'V1')
     }
     steps {
-        shell('echo "toto"')
+        shell('docker-compose build')
     }
 }
