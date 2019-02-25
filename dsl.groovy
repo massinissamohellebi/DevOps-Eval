@@ -2,9 +2,9 @@ def gitUrl = 'https://github.com/massinissamohellebi/DevOps-Eval.git'
 
 job('V1-job') {
     scm {
-        git(gitUrl)
+        git(gitUrl,'V1')
     }
     steps {
-        shell('docker-compose up -d')
+        shell('echo "toto"')
     }
 }
